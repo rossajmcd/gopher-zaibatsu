@@ -8,7 +8,7 @@ I'm a deliberate thinker, happy to wrestle with problems for a long, long time. 
 
 I follow approximately this plan to publish my content:
 
-- if I can (if I'm on a laptop or desktop) I publish to Gopherhole here on Zaibatsu first.
+- if I can (if I'm on a laptop or desktop) I publish to my Gopherhole (gopher://zaibatsu.circumlunar.space:70/1/~r0ss/) first.
 - if I am on mobile I publish to my self hosted Gemini capsule (gemini://r0ss.me) then port to my Gopherhole
 - finally I port posts over to my self hosted website (https://r0ss.me)
 
