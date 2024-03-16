@@ -1,15 +1,17 @@
 I'm r0ss.
 
-Geek, thinker, Open Source committer, calisthenics practitioner, Italian and Spanish language learner, gamer, Sci-Fi fan, Cyberpunk devotee, comic/Anime/Manga consumer, coffee and wine lover, husband and father. Exploring the web of knowledge across multiple protocols - gemini, gopher and http.
+Geek, thinker, reductionist, Open Source committer, calisthenics practitioner, Italian and Spanish language learner, gamer, Sci-Fi fan, Cyberpunk devotee, comic/Anime/Manga consumer, coffee and wine lover, husband and father. Exploring the web of knowledge across multiple protocols - gemini, gopher and http.
 
 I've been exclusively a webonaut since it's beginning, but much as with programming languages, I've learned that overall the old ways are best. For a little while now I've been practicing Indieweb, and I've realised that while fantastic, this does not permit me to operate more sensibly outside the out of control bloat, surveillance and BS infused landscape of HTTP/HTTPS. So now I'm a Geminaut and a Sundog too.
 
 I'm a deliberate thinker, happy to wrestle with problems for a long, long time. I'm not out to influence people, but would rather follow some aspects of the Stoic approach such as not worrying about others, but getting on and making myself right. Given my long time interest in cyberpunk I guess if I infuse elements of Stoicism that I do try to work towards I'm operating as a Micropunk. No doubt I'll write about this sometime, and while I'm at it I'll label it as 'M1cr0punk' for good measure as I've always been into my tech. Don't get me wrong - I love community... I'm just not trying to start another one, I prefer a world without too much tribalism.
 
-I follow approximately the following plan to publish my content:
+I follow approximately this plan to publish my content:
 
 - if I can (if I'm on a laptop or desktop) I publish to Gopherhole here on Zaibatsu first.
 - if I am on mobile I publish to my self hosted Gemini capsule (gemini://r0ss.me) then port to my Gopherhole
 - finally I port posts over to my self hosted website (https://r0ss.me)
+
+If you are for offline-first and don't use something like Offpunk you can grab my Gopherlog at https://github.com/rossajmcd/gopher-zaibatsu
 
 If any of this is interesting, or if you can point the way to and writing that intersects with this please do reach out to r0ss@posteo.net.
