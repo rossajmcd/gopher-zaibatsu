@@ -1,0 +1,28 @@
+I got into the idea of reducing over software and hardware before, initially touching on protocols[1] then community and ecosystems[2] and finally reading[3]. This time I'm going a little deeper under the stack - down to the bottom to look at the OS.
+
+If you can choose a protocol that is simpler and a medium (like text) that is simpler, why not an Operating System that is simpler.
+
+I've decided I'm going to get back into OpenBSD after many years away. After forking from NetBSD many years ago OpenBSD has favoured a security driven approach ever since. This means removing everything that should not be along for the ride whether that be programs or simply lines of code. Without getting into the details (which it would be hard to verify) - it is generally accepted that OpenBSD is smaller than both NetBSD and FreeBSD. The latter two are generally accepted to be smaller in size (where we are looking at the dimension of LoC usually) than Linux which is itself smaller than Windows.
+
+Correspondingly (and this is my experience too) most hold a view that Linux is more secure than Windows and OpenBSD in particular is more secure than Linux.
+
+On the one hand it is probably unfair to point at Microsoft and accuse them of being less secure than *nix flavours of OS... but... well... look in the news. The incidents involving government level security are particularly terrifying.
+
+Another benefit of the approach taken by the OpenBSD community and their freedom of choice in terms of the direction they take with the OS is that it can be very stable and slow to change (you could point to this and generally be right in surmising that the interfaces, protocols, code conventions and culture are well designed and nicely functional.
+
+I'll write a few entries on OpenBSD over time but thought I would start with the first choice on the way to getting the OS up and running - where and how to host it.
+
+The community at zaibatsu.circumlunar.space have been very helpful in pointing me at a few options in the US, Germany and the Netherlands with good OpenBSD compatibility.
+
+Options I considered were: ramnode (US), hertzner (Germany), openbsd.amsterdam.
+
+I don't have experience with any of them myself (but will report back when I do).
+
+For now I have opted for openbsd.amsterdam for the following reasons: it is hosted in the EU (and right now the rule of law and government is saner there than most other places), vps and cloud hosting orgs in the Netherlands are often sustainable powered or on the way to it (I do not know if openbsd.amsterdam is), it is pretty affordable and they send some of the money to the OpenBSD community.
+
+I'll talk a little about initial setup next time.
+
+[1]  20240307-2155-m1cr0punk
+[2]  20240310-1805-sundog
+[3]  20240317-1028-on-reading
+
