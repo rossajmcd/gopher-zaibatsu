@@ -1,0 +1,73 @@
+This simple OpenBSD setup post relates to the recucing over software and hardware thread and specifically[1].
+
+It is my intent to work through my own re-familialarisation with OpenBSD - no matter how simple or obvious, so this will save me from any unecessary processing or decision making in the future or equally work for anyone starting out for the first time. I may well be frequently stating the obvious.
+
+We'll assume this is OpenBSD on a server. Then we'll start from the point you have created a non-root user and probably setup 'doas' (which is basically sudo). In my case all of the following is with OpenBSD 7.5.
+
+First lets get vim on the server. This should be really straight forward, but surprisingly it will make you think for a moment (or at least make a choice).
+
+At your prompt run:
+YOUR_MACHINE$ doas pkg_add vim
+
+You will probably be prompted for a password - supply it.
+
+Output is something like:
+mbiguous: choose package for vim
+a	0: <None>
+	1: vim-9.1.139-gtk3
+	2: vim-9.1.139-gtk3-lua
+	3: vim-9.1.139-gtk3-perl-python3-ruby
+	4: vim-9.1.139-gtk3-python3
+	5: vim-9.1.139-no_x11-lua
+	6: vim-9.1.139-no_x11
+	7: vim-9.1.139-no_x11-perl-python3-ruby
+	8: vim-9.1.139-no_x11-python3
+	9: vim-9.1.139-no_x11-ruby
+
+You'll want to choose 6 in this case because you'll be running vim in the shell.
+
+Next lets get git setup. I've had enough of Github and its BS AI and anything else Microsoft may be doing with it and my code and data that I've either not heard about yet or don't have the time to research. The likes of Sourcehut is appealing but I don't want to pay to host repositories. Why not a bare bones install of Git on my brand new OpenBSD server then?
+
+At your prompt run:
+YOUR_MACHINE$ doas pkg_add git
+YOUR_MACHINE$ doas mkdir -p /home/git
+YOUR_MACHINE$ doas user add git
+YOUR_MACHINE$ doas chown -R git:git /home/git
+YOUR_MACHINE$ doas chsh -s $(which git-shell) git
+
+We'll assume you end up with a verion of git that is 2.44.0 or a little later (2.44.0 specifically requires a number of commands below to be precisely copied - e.g. maintenance related tasks).
+
+Then append the following to /etc/ssh/sshd_config with config for the git user:
+YOUR_MACHINE$ vim /etc/ssh/sshd_config
+
+Paste:
+Match User git
+	AllowAgentForwarding no
+	AllowTcpForwarding no
+	X11Forwarding no
+	PermitTTY no
+
+Create a repository:
+YOUR_MACHINE$ doas -u git git init --bare /home/git/YOUR_REPO.git
+
+Output from this will likely warn you about 'master' branch as a name being subject to change - we can deal with that later.
+
+Change directory into the repository you created (e.g.):
+YOUR_MACHINE$ cd /home/git/YOUR_REPO
+
+Now start git maintenance:
+YOUR_MACHINE$ doas -u git git maintenance register
+
+Output from this can be found in /home/git/.gitconfig.
+
+Now run the maintenance once so relevant crontab entries are created (ensure you are in the directory for the repo you created):
+YOUR_MACHINE$ doas -u git git maintenance start
+
+Output from this will likely give you some info indicating 'no crontab for git'. You can ignore this - the crontab entries wlil have been created - you can check them.
+
+YOUR_MACHINE$ doas -u git crontab -l
+
+Finally back on your own machine clone your repo (or add it as a remote to a freshly created local repo) - however you'd like to work with it. Don't forget to add your public ssh key to the git user on your OpenBSD server for scp style clone or remote add syntax.
+
+
+[1]  gopher://zaibatsu.circumlunar.space:70/0/~r0ss/phlog/2024/20240421-2027-reduced-os-openbsd
