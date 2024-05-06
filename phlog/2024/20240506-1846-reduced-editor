@@ -1,0 +1,13 @@
+This one always generates the most controversy, the greatest flame wars, but I'm going to go all in anyway. After reducing a little over protocols[1], community and ecosystem[2], reading[3] and then Operating System[4] I'm talking about the editor. In my case its Emacs. Abraham Lincoln said 'Give me six hours to chop down a tree and I will spend the first four sharpening my axe'. Programmers and others who have cause to use an editor often think in the same way - generally along the lines of 'learn to use one language well' or 'learn to use one editor well'.
+
+The thing with Emacs is - once you have put the work in this extends to so much more than with any other tool. Emacs with its almost Operating System like capabilities extends an interface over so many tools the effort you put in multiplies into benefits such as keyboard only navigation, unified control interface and of course customisability.
+
+You can be plugged into IRC (or email), listening to your music library, enjoying structural editing and a native mode for almost any programming language and reading an ebook all at the same time.
+
+It is the latter that is improving my quality of life at the moment. Nov.el[5] is excellent, renders beautifully and is so easy to navigate in Emacs. It might be that I am currently in a frame of mind for enjoying the simpler pleasures in life but there is something about writing config files for an OpenBSD server while reading your favourite OpenBSD book in the next frame in Emacs :-)
+
+[1]   gopher://zaibatsu.circumlunar.space:70/0/~r0ss/phlog/2024/20240307-2155-m1cr0punk
+[2]   gopher://zaibatsu.circumlunar.space:70/0/~r0ss/phlog/2024/20240310-1805-sundog
+[3]   gopher://zaibatsu.circumlunar.space:70/0/~r0ss/phlog/2024/20240317-1028-on-reading
+[4]   gopher://zaibatsu.circumlunar.space:70/0/~r0ss/phlog/2024/20240421-2027-reduced-os-openbsd
+[5]   https://depp.brause.cc/nov.el/
