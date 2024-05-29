@@ -1,0 +1,14 @@
+Having started my foray into Gopher[1] only a couple of months ago at the beginning of March I've been watching for the effect it has on my writing, on how I view my little tiny (probably mostly unobserved presence on the internet) and on how I feel about the enjoyment or friction that are part of this.
+
+My process has refined itself to writing everything intially for Gopher. No images, no links per say (beyond those that some clients e.g. Offpunk can auto-construct through sensible and generous design). There are more benefits to this than I had anticipated.
+
+Pure text as a medium puts me into a more relaxed and more importantly focussed state of mind. I am not distracted by all the shiny things I could be doing that should 'maybe' be associated with the content I am creating. Just the act of attempting to write words that convey what I am trying to say in some relatively readable way.
+
+Deploying my words into a place where they can be read (even if only by me) is so much easier, in my case SFTP is a simple way to send the content I write to any place I want. Equally this can be used to ensure I have a local offline copy of it available on any of my machines.
+
+Problems I had anticipated in terms of multi-protocol publishing have not really been a thing. I like the Gemini protocol, and personally see it as my main 'platform' for publishing (I hate that word, it has so many negative connotations - but I could not bring myself to use the word 'target' either) in a world where the web is probably beyond recovery until some non backwards compatible changes are made to it. Re-purposing my content for Gemini is as simple as running Gopher phlog entries through a script to change how links are setup. If I want to publish to the web (which is still where anyone is most likely to find me) I can just choose my Indieweb Micropub client of choice, paste content in and then choose any images or other bells and whistles I want to accompany content.
+
+Finally, 'burrowing' down into a smaller, lesser trodden part of the internet, joining a small number of others with similar outlooks has the added benefit of letting us enjoy a slower pace of life, less pressure to publish early, publish often, to avoid the desire to build an audience rather than just writing thoughts down for yourself, at your own pace, thoughts that might be interesting to others or might not, it does not matter.
+
+
+[1]   gopher://zaibatsu.circumlunar.space:70/0/~r0ss/phlog/2024/20240307-2155-m1cr0punk
