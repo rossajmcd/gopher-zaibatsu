@@ -1,0 +1,20 @@
+I've been tinkering with a programming language I've not looked at for a long time - Scheme. I've been using Clojure since around 2009 and I love it but I wanted to simplify away from the JVM and see how I get on with an even smaller simpler syntax.
+
+A few parts of the process have surprised me. One which was kind of obvious from the start is how much I miss the incredible design of Clojure, elements such as its Sequence abstraction are brilliant, as are its immutable collections. I only wish Clojure was not only JS/JVM/CLR compatible but also able to spit out C.
+
+Countering this though I've loved evaluating a few Scheme implementations, and given they are Lisp just like Clojure they've empowered me to remake them as I need with minimum fuss, using a tiny initial syntax.
+
+I think this is key... and follows the theme of reducing over complexity I've been following with a deliberate intent since the beginning of this year.
+
+I've done some of the obvious stuff with Scheme in terms of making bits of it more similar to Clojure (to help with muscle memory friction), and now I'm getting into the swing of things I'm starting to try to move back into the multimethods and destructuring goodness of Clojure.
+
+After looking at several Scheme implementations (Chicken, Guile and Racket) I've opted for Chicken which seems to tick a few boxes for me and be evidently simple.
+
+Interestingly one of the least simple parts of setup was how it did not work out of the box on either MacOS or Guix. This was disappointing.
+
+There was a Homebrew error which required manual linking commands to be run on MacOS and I needed to remove a more up to date version of gcc-toolchain on Guix (consequences not found yet).
+
+In fact due to issues on two platforms my benchmark test for sanity of package management/setup (OpenBSD) was deployed just to remind me things can work first time. I'll pretty much usually be deploying to OpenBSD anyway.
+
+This is a fun ongoing experiment and hopefully I'll be announcing some fun little hobby programs soon.
+
