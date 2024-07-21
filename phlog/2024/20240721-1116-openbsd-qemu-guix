@@ -1,0 +1,21 @@
+I decided I enjoy the stability and simplicity of maintenance so much with OpenBSD that it made sense to finally virtualise on Guix (I'll probably tinker with getting it going on MacOS too at some point).
+
+There is something about the predictability of OpenBSD - knowing that as I upgrade my system there generally won't be any surprises... a JVM or associated libraries suddenly not working because of a huge dependency nightmare. Of course it does happen... just so rarely.
+
+I also love how simple the basic install and resulting directory and perms landscape is. I can grok it (and I have so little time to spend learning the minutiae of things these days).
+
+So on to the process.
+
+I tried a couple, the one that worked for me with only minor adjustments was over at URL:https://yotsev.xyz/sysadmin/obsd-vm.html.
+
+My changes specifically were:
+- download install75.iso
+
+Using the normal (non headless) QEMU (and assuming you are running this command in the directory where your iso is located) at your prompt run:
+YOUR_MACHINE$ qemu-system-x86_64 -hda obsd.qcow2 -cdrom install75.iso -monitor stdio
+
+In my case the '-sdl' setting did not work (versions and all).
+
+The only other real difference for me was that I don't think I was prompted for the domain... my default seems fine for now.
+
+Thats it! If nothing else this is a note to my future self.
