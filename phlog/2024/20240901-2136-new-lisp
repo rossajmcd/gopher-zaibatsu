@@ -1,0 +1,15 @@
+I've been stuck in a difficult place recently, wanting the goodness of LISP, but with a more modern (and if I'm honest Clojure-like syntax) while at the same time in a footprint small enough to run on almost anything, or at the very least run well on most architectures.
+
+I've read plenty of good things about both Guile Scheme and Chicken Scheme, and have trid them - even written a couple of semi-useful things for myself with them. But each and every time I miss the simplified syntax of Clojure.
+
+Then I bounce too far the other way, back in Clojure world but reliant on the heavyweight JVM. I've played with GraalVM, but get sick of the customisatoin necessary to make it work.
+
+I can't see the point subjectively of writing Clojure that is turned in to Lua. If I'm not going to the JVM or Javascript then I think the best option is the most machine ready - and or FFI so I can target a couple of options.
+
+I'm looking into Janet [1] at the moment and it may have what I need. Its very early days but I don't remember being as excited about a language for a long long time.
+
+As per always the fact the syntax is tiny or reduced as compared to most alternatives is appealing to me.
+
+I'll have more of a play, figure out what my executables look like in terms of footprint and report back in.
+
+[1]  https://janet-lang.org/
